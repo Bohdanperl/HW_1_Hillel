@@ -7,13 +7,28 @@ const char SPACE{' '};
 
 void Person::printInfo() const 
 {
-        std::cout << TAB << TAB << name_ << TAB << TAB << surname_ << NEW_LINE << TAB << TAB << SPACE << SPACE << position_ 
-                  << NEW_LINE << SPACE << SPACE << linkedin_ << TAB << github_ 
-                  << NEW_LINE << SPACE << SPACE << telegram_ << TAB << TAB << TAB << TAB << location_ 
-                  << NEW_LINE << "Summary: " << summary_ << NEW_LINE << "Skills: " << skills_ 
-                  << NEW_LINE << "Education: " << education_
-                  << NEW_LINE << "Language: "  << language_ << std::endl;
-    
+    std::cout << R"(
+    Name:      )" << name_ <<
+    R"(
+    Surname:   )" << surname_ <<
+    R"(
+    Position:  )" << position_ <<
+    R"(
+    LinkedIn:  )" << linkedin_ <<
+    R"(
+    GitHub:    )" << github_ <<
+    R"(
+    Telegram:  )" << telegram_ <<
+    R"(
+    Location:  )" << location_ <<
+    R"(
+    Summary:   )" << summary_ <<
+    R"(
+    Skills:    )" << skills_ <<
+    R"(
+    Education: )" << education_ <<
+    R"(
+    Language:  )" << language_ << std::endl;    
 }
 
 PersonBuilder& PersonBuilder::setName(const std::string& name) 
