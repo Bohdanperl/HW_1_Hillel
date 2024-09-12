@@ -1,10 +1,6 @@
 #include "HW_1.h"
 #include <iostream>
 
-const char NEW_LINE{'\n'};
-const char TAB{'\t'};
-const char SPACE{' '};
-
 void Person::printInfo() const 
 {
     std::cout << R"(
